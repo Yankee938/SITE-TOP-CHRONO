@@ -1,0 +1,177 @@
+/* ----- MAIN CSS-----*/
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+    line-height: 5px;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+}
+/* ----- LABEL CSS-----*/
+    label{
+        color: black;
+        font-size: medium;
+        display: flex;
+        align-content: center;
+        padding: 0.4%;
+        }
+/* ----- INPUT CSS-----*/
+    input{
+            width: 50%;
+            }
+            
+/* ----- BUTTON-----*/
+.buttonCommande{
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+.buttonCommandez {
+    margin-left: 10px;
+}
+/* ----- BLOCS-----*/
+#blocPrincipal{
+    position: relative;
+    background-image: url(../img/paris.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 5px;
+    height: 40vh;
+    background-position:initial;
+}
+.bloc2{
+display: flex;
+justify-content: space-around;
+background-color: rgb(248, 246, 246);
+}
+
+
+
+.bloc2 img{
+    width: 55%;
+    text-align: center;
+    border-radius: 70%;
+    margin-top: 5vh;
+    
+    }
+
+    .img-blocks {
+        text-align: center;
+        padding: 10px 0;
+    }
+/* ----- BLOC ONE PAGE-----*/
+    .ecologie{
+    background-image: url(../img/eco.jpg);
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 40%;
+    }
+
+    .sonore{
+        background-image: url(../img/eco.jpg);
+        width: 10%;
+        border: 1px solid white;
+        border-radius: 40%;
+        }
+
+    .embouteillage{
+            background-image: url(../img/embouteillage.jpg);
+            width: 10%;
+            border: 1px solid white;
+            border-radius: 40%;
+            }
+/* ----- TITLE-----*/
+h2{
+    font-size: 20px;
+    color: grey;
+    padding: 5px;
+}
+
+/* ----- SPONSORS-----*/
+.partenaires{
+display: flex;
+justify-content: space-between;
+background-color: rgb(255, 251, 251);
+
+}
+
+.partenaires img{
+    width: 70%;
+    height: 70%;
+    background-color: rgb(255, 251, 251);
+    }
+
+
+
+/* ----- MEDIA QUERIES-----*/
+
+@media screen and (min-width: 1200px) {
+    input{
+        width: 55%;
+        }
+        #embouteillage{
+            width: 200px;
+        }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    input{
+        width: 50%;
+        }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    input{
+        width: 48%;
+        }
+
+    #ecologie{
+            width: 120px;
+        }
+} 
+@media (min-width: 460px) and (max-width: 767px) {
+    input{
+        width: 47%;
+        }
+    #ecologie{
+        width: 120px;
+    }
+
+    footer{
+        font-size: 80%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+}
+@media screen and (max-width: 459px) {
+    input{
+        width: 60%;
+        }
+    .api-meteo{
+        display: none;
+    }
+
+    h5{
+        font-size: 0%;
+    }
+
+    footer{
+        font-size: 50%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+
+    .endfooter{
+        width: 100%;
+        margin-left:5vh
+        
+    }
+}

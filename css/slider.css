@@ -1,0 +1,64 @@
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+}
+
+.menu-block {
+    display: inherit;
+}
+.button-block {
+    display: flex;
+}
+.button-block button {
+    font-size: 12px;
+}
+
+div ul li a:hover {
+    background-color: #FB5004;
+    }
+
+    .designecar{
+        padding: 15px;
+        width: 50%;
+    }
+
+footer {
+    background-color:rgb(70, 70, 70);
+    color:whitesmoke;
+    font-weight: bold;
+    height: 30vh;
+    margin-top: 10vh;
+    }
+    
+    #footerBloc1{
+    display: flex;
+    justify-content:left;
+    padding: 5px;
+    font-weight: bold;
+    color:whitesmoke;
+    }
+    
+    #footerBloc2{
+       padding: 5px;
+       margin:  5px;
+        }
+    .droits{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    
+    .endfooter{
+       padding:15px ;
+       margin: 5px;
+    }

@@ -1,0 +1,209 @@
+/* ----- FORMULARY-----*/
+select {
+    font-size: 3rem;
+    padding: 2px 5px;
+}
+
+.output{
+    width: 100%;
+    height: 70VH;
+}
+
+    #buttonColor{
+        color:white;
+        background-color:#AD3502;
+    }
+
+    .buttonValidation{
+        margin-top: 24vh;
+    }
+
+    .buttonValidation2{
+        float: right;
+    }
+
+
+    #tabs-1{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .firstform{
+        border: 1px solid green;
+        width: 100vw;
+        height: 60vh;
+        text-align: center;
+        background-image: url(../img/velo-cargo-electrique-douze-cycles-g4.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+.separation{
+    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+    #tabs-2{
+        display: flex;
+        justify-content: left;
+    }
+    #tabs-2 label{
+        margin: 2vh;
+        width:15vh;
+    }
+
+    .prenom-nom input{
+        margin: 2vh;
+        width:30vh;
+    }
+
+    .adresse input{
+        margin: 2vh;
+        width:30vh;
+    }
+
+
+    .message textarea{
+        margin: 2vh;
+        width:50vh;
+        height: 11vh !important;
+    }
+    .secondform{
+        border: 1px solid green;
+        width: 100vw;
+        height: 60vh;
+        text-align: left;
+        background-image: url(../img/paris2.jpeg);
+        background-size:cover;
+        background-repeat: no-repeat;
+    
+    }
+
+    form img{
+        background-color: rgba(0,0,0,0.40)
+    }
+    .message label {
+        vertical-align: top;
+    }
+    .formColor{
+        color:black;
+        font-weight: bold;
+        width: 50%;
+        font-size: 80%;
+    }
+
+/* ----- MEDIA QUERIES-----*/
+    @media  (max-width: 1200px) {
+        .message textarea{
+            margin: 2vh;
+            width:30vh;
+            height: 5vh;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .firstform{
+            background-position: center;
+        }
+    }
+   
+    @media (max-width: 991px) {
+        .secondform{
+            background-position: right;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .output{
+            height:80vh;
+           }
+
+        .secondform{
+            height:70vh;
+                       }
+
+        label{
+            width: 100vh;
+        }
+
+        .firstform{
+            height:70vh;
+            width: 90%;
+            }
+
+    } 
+
+
+    @media (min-width: 460px) and (max-width: 767px) {
+       
+        .output{
+            height:80vh;
+           }
+
+        .secondform{
+            height:70vh;
+                       }
+
+        .firstform{
+            height:70vh;
+            }
+    }
+
+    @media screen and (max-width: 459px) {
+       .output{
+            height:130vh;
+           }
+
+        .secondform{
+            height:120vh;
+                       }
+
+        .firstform{
+            height:120vh;
+            }
+    }
+
+    @media (min-width: 460px) and (max-width: 767px) {
+   
+        footer{
+            font-size: 80%;
+        }
+    
+        #footerBloc1{
+            display: inline;
+            gap: 5vh;
+        }
+    }
+    @media screen and (max-width: 459px) {
+        
+    
+        footer{
+            font-size: 50%;
+        }
+    
+        #footerBloc1{
+            display: inline;
+            gap: 5vh;
+        }
+
+        .endfooter{
+            width: 100%;
+            margin-left:5vh
+            
+        }
+    }
+.masquer{
+    display: none;
+}
+
+.inscription{
+    width: 3vh;
+    height: 3vh;
+}
+
+.formulaireSeparation{
+    display: flex;
+    justify-content: space-between;
+}

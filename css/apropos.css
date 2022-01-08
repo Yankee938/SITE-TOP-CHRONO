@@ -1,0 +1,170 @@
+  /* ----- MAIN PICTURE OF THE PAGE-----*/
+  #presentation {
+    position: relative;
+    background-image: url(../img/cliente\ bras\ lever\ telephone\ a\ la\ main\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 5px;
+    height: 90vh;
+    background-position:bottom;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+}
+/* ----- BLOCS-----*/
+.bloc2{
+    width: 100%;
+    background-color: rgb(248, 246, 246);
+    
+}
+
+.bloc2 h2{
+   
+    font-weight: bold;
+    color: white;
+    
+}
+
+.bloc2 P{
+    font-weight: bold;
+    color:black;
+    
+}
+
+
+.bloc3{
+    width: 100%;
+    background-color: rgb(248, 246, 246);
+    margin-top: 2vh;
+}
+
+.bloc3 img{
+    width: 60%;
+    height: 70%;
+    margin: 3vh;
+}
+.bloc3 .img-block {
+    text-align: center;
+}
+
+/* ----- TITLE-----*/
+h3{
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    padding: 15px;
+    margin-top: 2vh;
+
+}
+
+/* ----- SLOGAN POSITION MAIN MENU-----*/
+.texte_centrer {
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #FB5004;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+/* ----- SPONSORS DIRECTION-----*/
+#sponsors{
+    display: flex;
+    justify-content: space-around;
+    
+    }
+
+/* ----- POSITION ASIDE PART 2 P-----*/
+    .texte{
+        margin-left: 5vh;
+    }
+/* ----- PICTURES DIMENSION-----*/
+#store img{
+width: 30%;
+}
+
+
+@media screen and (max-width: 961px) {
+
+    #sponsors2{
+        width: 70%;
+        height: 50%;
+        }
+        .texte_centrer{
+            width: 60%;
+            margin-top: 10vh;
+            margin-left: 8vh;
+        }
+}
+
+
+.velo2{
+    width: 150px;
+    height: 150px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .texte_centrer{
+        width: 60%;
+        margin-top: 10vh;
+        margin-left: 25vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .texte_centrer{
+        width: 60%;
+        margin-top: 10vh;
+        margin-left: 20vh;
+    }
+} 
+
+@media (min-width: 460px) and (max-width: 767px) {
+   
+    footer{
+        font-size: 80%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+    #sponsors2{
+        width: 60%;
+    }
+    .texte_centrer{
+        width: 60%;
+        margin-top: 10vh;
+        margin-left: 8vh;
+    }
+}
+@media screen and (max-width: 459px) {
+    
+
+    footer{
+        font-size: 50%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+
+    #sponsors2{
+        font-size: 60%;
+    }
+
+    .endfooter{
+        width: 100%;
+        margin-left:5vh
+        
+    }
+
+    .texte_centrer{
+        width: 60%;
+        margin-top: 10vh;
+        margin-left: 8vh;
+    }
+}

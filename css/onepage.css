@@ -1,0 +1,64 @@
+/* ----- PICTURES-----*/
+img{
+    width: 200px;
+    height: 100px;
+}
+
+/* ----- LOGO-----*/
+#logo{
+    width: 200px;
+    height: 50px;
+}
+
+/* ----- TITLE-----*/
+h2{
+    margin-top: 5vh;
+}
+
+/* ----- MEDIA QUERIES-----*/
+
+@media (min-width: 460px) and (max-width: 767px) {
+   
+    footer{
+        font-size: 80%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+}
+@media screen and (max-width: 459px) {
+    
+
+    footer{
+        font-size: 50%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+
+    .endfooter{
+        width: 100%;
+        margin-left:5vh
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    
+} 
+@media (min-width: 460px) and (max-width: 767px) {
+    
+}
+@media screen and (max-width: 459px) {
+    
+}

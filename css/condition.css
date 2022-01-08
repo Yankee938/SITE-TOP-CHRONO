@@ -1,0 +1,56 @@
+/* ----- CSS FOR JQUERY ACCORDION-----*/
+#accordion{
+    margin-top: -28vh;
+    padding: 15vh;
+}
+
+/* ----- TITLE-----*/
+h3{
+    margin-top: -8vh;
+    top:0;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    padding: 15vh;
+}
+
+
+/* jquery accordion*/
+.ui-state-active {
+    background-color:#00AD96;
+}
+
+img{
+    width: 200px;
+    height: 50px;
+}
+
+/* ----- MEDIA QUERIES-----*/
+@media (min-width: 460px) and (max-width: 767px) {
+   
+    footer{
+        font-size: 80%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+}
+@media screen and (max-width: 459px) {
+    
+
+    footer{
+        font-size: 50%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+
+    .endfooter{
+        width: 100%;
+        margin-left:5vh
+        
+    }
+}

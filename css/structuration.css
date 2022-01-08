@@ -1,0 +1,301 @@
+/* ----- INITIALISATION BODY-----*/
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background:rgb(255, 252, 252);
+}
+/* ----- END INITIALISATION BODY-----*/
+
+/* ----- NAVIGATION CSS-----*/
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    }
+    
+    .menu-block {
+        display: inherit;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #FB5004;
+        }
+        
+        #buttonColor{
+            color:white;
+            background-color:#AD3502;
+        }
+
+        #buttonColor2{
+            color:white;
+            background-color:#AD3502;
+        }
+
+        a{
+            color: #FB5004;
+            text-decoration: none;
+        }
+
+/* ----- END NAVIGATION CSS-----*/     
+
+
+/* ----- FOOTER CSS-----*/
+footer{
+background-color:rgb(70, 70, 70);
+color:whitesmoke;
+font-weight: bold;
+height: auto;
+padding: 20px;
+margin-top: 15px;
+}
+
+#footerBloc1{
+display: flex;
+justify-content:left;
+padding: 15px;
+font-weight: bold;
+color:whitesmoke;
+}
+#footerBloc1 a{
+    text-decoration: none;
+     color:whitesmoke;
+     }
+
+#footerBloc2{
+   padding: 15px;
+
+    }
+
+#footerBloc2 i{
+        margin: 5px;
+     
+         }
+
+.droits{
+margin-top: 5vh;
+display: flex;
+justify-content: space-between;
+
+}
+
+.endfooter{
+   padding:15px ;
+}
+.endfooter a {
+    margin-right: 10px;
+    color: #fff;
+}
+/* ----- END FOOTER CSS-----*/
+
+
+/* ----- MEDIA QUERIES-----*/
+@media (min-width: 460px) and (max-width: 767px) {
+
+
+    footer{
+        height: 45vh;
+        
+        }
+
+    .droits{
+        display: block;
+        
+        }
+
+        #footerBloc1{
+            display: flex;
+            justify-content: space-between;
+         
+            
+            }
+    
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+}
+/* ----- Media hamburger-----*/
+@media screen and (min-width: 992px) {
+    .navbar-xs {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-xs {
+        display: block;
+    }
+    .navbar-expand-lg {
+        display: none;
+    }
+    .container-header {
+        width: 100%;
+    }
+    .container-header .topnav_hamburger_icon {
+        float: right;
+        margin-top: 10px;
+    }
+    #content-global .header .nav-links{
+        padding-top: 0px;
+    }
+    /* hide classic menu */
+    #topnav_menu {
+        display: none;
+    }
+
+    /* position home link at left and hamburger at right */
+    #home_link {
+        flex-grow: 1;
+        display: block;
+    }
+
+    /* disable horizontal scrolling  */
+    #root {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* show responsive menu and position at the right of the screen */
+    #topnav_responsive_menu {
+        display: block;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        transform-origin: 0% 0%;
+        transform: translate(200%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    #topnav_responsive_menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 0;
+        min-width: 100%;
+        height: 100vh;
+        padding: 56px 0 0;
+        text-align: center;
+        background: #00ad96;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    #topnav_responsive_menu li {
+        padding: 12px 24px;
+    }
+
+    #topnav_responsive_menu a {
+        white-space: nowrap;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    /* And let's slide it in from the right */
+    #topnav_responsive_menu.open {
+        transform: none;
+        position: fixed;
+    }
+    #topnav_hamburger_icon {
+        display: block;
+        position: relative;
+        width: 33px;
+        height: 28px;
+        z-index: 100;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+        margin-top: 10px;
+
+    }
+
+    /* define the style (size, color, position, animation, ...) of the 3 spans */
+    #topnav_hamburger_icon span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        margin-bottom: 5px;
+        background: #424242;
+        border-radius: 3px;
+        z-index: 100;
+        opacity: 1;
+        left: 0;
+
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+
+    /* set the 3 spans position to look like a hamburger */
+    #topnav_hamburger_icon span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left top;
+        -moz-transform-origin: left top;
+        -o-transform-origin: left top;
+        transform-origin: left top;
+    }
+    #topnav_hamburger_icon span:nth-child(2) {
+        top: 12px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    #topnav_hamburger_icon span:nth-child(3) {
+        top: 24px;
+        -webkit-transform-origin: left bottom;
+        -moz-transform-origin: left bottom;
+        -o-transform-origin: left bottom;
+        transform-origin: left bottom;
+    }
+
+    /* change color when opening the menu */
+    #topnav_hamburger_icon.open span {
+        background: #fff;
+    }
+
+    /* the first span rotates 45° \ */
+    #topnav_hamburger_icon.open span:nth-child(1) {
+        width: 110%;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /* the second span disappears */
+    #topnav_hamburger_icon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    /* the last span rotates -45° / */
+    #topnav_hamburger_icon.open span:nth-child(3) {
+        width: 110%;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+/* ----- END QUERIES-----*/

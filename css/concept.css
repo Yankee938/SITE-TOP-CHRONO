@@ -1,0 +1,47 @@
+/* ----- POSITION CAROUSEL-----*/
+    .designecar{
+        padding: 15px;
+        width: 50%;
+    }
+
+/* ----- MEDIA QUERIES-----*/
+ 
+@media (min-width: 460px) and (max-width: 767px) {
+    .sizeText{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 459px) {
+    .sizeText{
+        font-size: 60%;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 767px) {
+   
+    footer{
+        font-size: 80%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+}
+@media screen and (max-width: 459px) {
+    
+
+    footer{
+        font-size: 50%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+    .endfooter{
+        width: 100%;
+        margin-left:5vh
+        
+    }
+}

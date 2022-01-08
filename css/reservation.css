@@ -1,0 +1,174 @@
+/* ----- BUTTON-----*/
+.button1{
+background-color: #AD3502;
+font-weight: bold;
+font-size: 20px;
+margin: 10px;
+}
+
+.button2{
+    background-color:#05FAD9;
+    
+    font-size: 20px;
+    }
+
+.buttonCommande{
+        margin-right: 50vh;
+    }
+
+/* ----- FORMULARY-----*/
+    label{
+        color: black;
+        font-size: medium;
+       
+        display: flex;
+        align-content: center;
+        padding: 0.4%;
+        }
+    
+    input{
+            width: 70%;
+            }
+    .inputposition1{
+        margin: 7vh;
+    }
+/* ----- TITLE-----*/
+    h2{
+        font-size: 1.5em;
+    }
+            
+
+/* ----- BLOCS-----*/
+#blocPrincipal{
+    position: relative;
+    padding: 5px;
+    background-position:initial;
+}
+
+
+
+#blocSecond img{
+width: 92%;
+}
+ 
+.img-blocks {
+    text-align: center;
+    padding: 10px 0;
+}
+/* ----- ZOOM-----*/
+.zoom:hover{
+cursor: pointer;
+}
+
+.image:active
+{
+   transform: scale(1.5);
+}
+
+/* ----- MEDIA QUERIES-----*/
+@media screen and (max-width: 1200px) {
+    #separation {
+        margin-top: 1VH;
+         }
+
+
+    h2{ 
+        font-size: 2VH;
+     }
+}
+@media screen and (min-width: 768px) {
+    .separation {
+        display: flex;
+        justify-content: center;
+    }
+
+    #buttonColor2{
+        margin-top: 1vh;
+    }
+    
+}
+
+@media  (max-width: 620px) {
+    input{
+        width: 70%;
+        }
+
+        .separation {
+            display: flex;
+            flex-direction: column;
+        }
+
+}
+
+@media (min-width: 460px) and (max-width: 767px) {
+   
+    footer{
+        font-size: 80%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+}
+@media screen and (max-width: 459px) {
+    
+
+    footer{
+        font-size: 50%;
+    }
+
+    #footerBloc1{
+        display: inline;
+        gap: 5vh;
+    }
+
+    .endfooter{
+        width: 100%;
+        margin-left:5vh
+        
+    }
+}
+
+/* ----- MEDIA QUERIES-----*/
+
+@media screen and (min-width: 1200px) {
+    #buttonColor2{
+        margin-top: -0.1vh;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    #map{
+        width: 50%;
+    }
+
+    #buttonColor2{
+        margin-top: -0.5vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #buttonColor2{
+        margin-top: -0.5vh;
+    }
+
+    .image:active
+    {
+       transform: scale(1.80);
+    }
+    
+} 
+@media (min-width: 460px) and (max-width: 767px) {
+    .image:active
+    {
+       transform: scale(1.80);
+    }
+}
+@media screen and (max-width: 459px) {
+    input{
+        width: 100%;
+        }
+
+        #buttonColor2{
+            margin-top: 1vh;
+        }
+}
