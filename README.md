@@ -17,6 +17,7 @@ J'ai utiliser différents outils, langages et librairies pour réaliser ce site 
 - DIFFERENTS CDN 
 
 IMPORTANT ! A un moment je n'ai pas utiliser le CDN pour bootstrap , je suis passé par un fichier DIST, donc il faut faire attention à la lecture de ce projet pour le bon fonctionnment.
+Le fichier DIST de Bootstrap est trop volumineux pour être importé sur GITHUB.
 
 
 Riaz EMAMUCK 
