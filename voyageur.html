@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/voyageur-conducteur.css">
+  <link rel="stylesheet" href="css/structuration.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <title>TOP CHRONO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yuji+Boku&display=swap" rel="stylesheet">
+  <!-- Lien vers jqueryUI.CSS de la distribution-->
+  <link rel="stylesheet" href="jquery/dist/jquery-ui.min.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- START NAVIGATION MENU-->
+  <header>
+    <!-- MENU XS -->
+    <nav class="navbar navbar-light bg-light navbar-xs container">
+      <div class="container-fluid">
+        <div class="container-header">
+          <a href="index.html"><img class="logo" src="img/logoTopChrono.jpg" alt="logo"></a>
+          <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Responsive Menu -->
+      <nav id="topnav_responsive_menu">
+        <ul>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="APROPOS.html">PRESENTATION</a></li>
+          <li><a href="CONCEPT.html">CONCEPT</a></li>
+          <li><a href="RESERVATION.HTML">RESERVATION</a></li>
+          <li><a href="CONTACT.HTML">CONTACT</a></li>
+          <li><a href="voyageur.html">VOYAGEUR/CHAUFFEUR</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+    <!-- MENU LG -->
+    <nav class="navbar navbar-expand-lg navbar-light col-lg-12 navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="index.html"><img class="logo" src="img/logoTopChrono.jpg" alt="logo"></a>
+        <a href="index.html"><i class="fas fa-home"></i></a>
+      </div>
+
+      <div class="menu-block col-lg-6">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="APROPOS.html">PRESENTATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CONCEPT.html">CONCEPT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="RESERVATION.HTML">RESERVATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CONTACT.HTML">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <form class=" masquer container-fluid justify-content-start">
+          <button class="btn btn-outline-success me-2" type="button"><a
+              href="voyageur.html?#tabs-1">VOYAGEUR</a></button>
+          <button class="btn btn-sm btn-outline-secondary" type="button"><a
+              href="voyageur.html?#tabs-2">CHAUFFEUR</a></button>
+        </form>
+
+      </div>
+    </nav>
+  </header>
+  <!-- END NAVIGATION MENU-->
+
+  <!-- START MAIN MENU -->
+  <main class=" separation container">
+  <div id="tabs" class="output">
+      <ul>
+        <li><a href="#tabs-1" id="voyageur">VOYAGEUR</a></li>
+        <li><a href="#tabs-2" id="chauffeur">CHAUFFEUR</a></li>
+      </ul>
+    
+    <!-- Start first form menu -->
+    <div id="tabs-1" class="container">
+      <div class="firstform">
+        <form method="post">
+          <h2>Votre intêret pour le vélo triporteur:</h2>
+          <label for="sondage-voyageur"></label>
+          <select name="sondage" id="sondage-voyageur">
+            <option value="">--Merci de choisir une option--</option>
+            <option value="1">Désintéret</option>
+            <option value="2">Trés faible</option>
+            <option value="3">Faible</option>
+            <option value="4">Moyen</option>
+            <option value="5">Intéressé</option>
+            <option value="6">Très intéressé</option>
+          </select>
+        </form>
+
+
+        <div class="buttonValidation">
+          <form class="container-fluid justify-content-start">
+          <button id="buttonColor" class="btn btn-outline-success me-2" type="submit">VALIDEZ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End first form menu -->
+
+    <!-- Start second form menu -->
+    <div id="tabs-2" class="container">
+      <div class="secondform">
+        <form method="post">
+
+     <div class="formulaireSeparation">
+        <div>
+          <h2>Formulaire d'informations</h2>
+        </div>
+          <div>
+            <a href="../TOP CHRONO/Dossier-chauffeur/DOSSIER-INSCRIPTION.docx">Inscription <img class="inscription" src="img/icone.png" alt="dossierInscription"></a>
+          </div>
+      </div>
+
+          <label class="formColor" for="madame">Madame</label>
+          <input type="checkbox" name="civilite" id="madame">
+          <label class="formColor" for="monsieur">Monsieur</label>
+          <input type="checkbox" name="civilite" id="monsieur">
+
+          <div class="prenom-nom">
+            <label class="formColor" for="prenom">Prénom :</label>
+            <input type="text" name="coordonnees" id="prenom">
+
+
+            <label class="formColor" for="nom">Nom :</label>
+            <input type="text" name="coordonnees" id="nom">
+          </div>
+
+          <div class="adresse">
+            <label class="formColor" for="adresse">Adresse :</label>
+            <input type="text" name="coordonnees" id="adresse">
+
+            <label class="formColor" for="code-postal">Code postal :</label>
+            <input type="text" name="coordonnees" id="code-postal">
+          </div>
+
+          <div class="message">
+            <label class="formColor" for="message">Votre message:</label>
+            <textarea name="coordonnees" id="message"></textarea>
+          </div>
+
+          <div class="container">
+            <button id="buttonColor2" class="buttonValidation2 btn btn-outline-success me-2"
+              type="submit">VALIDEZ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    <!-- End second form menu -->
+  </main>
+  <!-- END MAIN MENU -->
+
+  <!-- START FOOTER MENU-->
+  <footer>
+
+    <div id="footerBloc1" class="col-lg-12 col-md-12 col-xs-12">
+      <div class="col-lg-6 col-md-6 col-xs-6"><a href="index.html">TOP-CHRONO.FR</a></div>
+      <div class="col-lg-6 col-md-6 col-xs-6"><a href="conditions.html">CONDITIONS GENERALES</a></div>
+    </div>
+
+    <div id="footerBloc2">
+      <div><i class="fas fa-phone-alt"></i><span> 01.49.40.00.90</span></div>
+      <div class="icon"><i class="fas fa-address-card"></i><span> contact@top-chrono.fr</span></div>
+      <div class="icon"><i class="fas fa-map-marker-alt"></i><span> 75 Avenue des champs Élysées 75008 Paris</span>
+      </div>
+
+      <div class="droits">© 2021 Tous droits réservés top-chrono.com
+        <div class="endfooter">
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- END FOOTER MENU-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+  </script>
+
+  <!-- I link primery jquery.js (complete version, but we can put light version jquery-min.js)-->
+  <script src="jquery/dist/external/jquery/jquery.js"></script>
+  <!-- I link second jquery-ui.min.js-->
+  <script src="jquery/dist/jquery-ui.min.js"></script>
+
+  <!-- START FUNCTION JS CONDUCTOR MADAM OR MISTER-->
+  <script>
+    $('#madame').on('click', function () {
+      $('#madame').prop('checked', true);
+      $('#monsieur').prop('checked', false);
+    });
+    $('#monsieur').on('click', function () {
+      $('#monsieur').prop('checked', true);
+      $('#madame').prop('checked', false);
+
+    });
+
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+  <!-- END FUNCTION JS CONDUCTOR MADAM OR MISTER-->
+
+
+
+</body>
+
+</html>
